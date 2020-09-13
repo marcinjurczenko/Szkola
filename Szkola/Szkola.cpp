@@ -14,8 +14,12 @@ int main()
         }
 
         Przywitanie();
+
+        Czyszczenie();
     }
 }
+
+
 
 int Menu()
 {
@@ -34,5 +38,13 @@ void Przywitanie()
     cout << "Podaj swoje Imie : ";
     cin >> imie;
     cout << "Twoje imie to : " << imie << endl;
+}
+
+void Czyszczenie()
+{
+    cout << "press any key to exit...";
+    char temp;
+    cin >> temp;
+    system("cls");
 }
 
