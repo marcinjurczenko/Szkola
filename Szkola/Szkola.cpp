@@ -17,6 +17,7 @@ void Obliczenia()
     {
         int liczba1;
         int liczba2;
+        int wynik;
         int wyjscie = Menu();
 
         if (wyjscie == 0)
@@ -24,59 +25,40 @@ void Obliczenia()
             break;
         }
 
-        if (wyjscie == 1)
+        switch (wyjscie)
         {
+        case 1:
             PobranieDwochLiczb(liczba1, liczba2);
-
-            int wynik = Dodawanie(liczba1, liczba2);
-
+            wynik = Dodawanie(liczba1, liczba2);
             WyswietlenieWyniku(wynik);
-
             Czyszczenie();
-        }
-
-        if (wyjscie == 2)
-        {
+            break;
+        case 2:
             PobranieDwochLiczb(liczba1, liczba2);
-
-            int wynik = Odejmowanie(liczba1, liczba2);
-
+            wynik = Odejmowanie(liczba1, liczba2);
             WyswietlenieWyniku(wynik);
-
             Czyszczenie();
-        }
-
-        if (wyjscie == 3)
-        {
+            break;
+        case 3:
             PobranieDwochLiczb(liczba1, liczba2);
-
-            int wynik = Mnozenie(liczba1, liczba2);
-
+            wynik = Mnozenie(liczba1, liczba2);
             WyswietlenieWyniku(wynik);
-
             Czyszczenie();
-        }
-
-        if (wyjscie == 4)
-        {
+            break;
+        case 4:
             PobranieDwochLiczb(liczba1, liczba2);
-
-            int wynik = Dzielenie(liczba1, liczba2);
-
+            wynik = Dzielenie(liczba1, liczba2);
             WyswietlenieWyniku(wynik);
-
             Czyszczenie();
-        }
-
-        if (wyjscie == 5)
-        {
+            break;
+        case 5:
             PobranieLiczby(liczba1);
-            
             Odliczanie(liczba1);
-
             Czyszczenie();
+            break;
+        default:
+            break;
         }
-
     }
 }
 
