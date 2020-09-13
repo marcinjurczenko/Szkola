@@ -4,6 +4,8 @@ void Przywitanie();
 
 int main();
 
+void PobranieDwochLiczb(int& liczba1, int& liczba2);
+
 int Menu();
 
 void Czyszczenie();

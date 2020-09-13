@@ -8,6 +8,8 @@ int main()
 
     while (true)
     {
+        int liczba1;
+        int liczba2;
         int wyjscie = Menu();
 
         if (wyjscie == 0) 
@@ -17,77 +19,57 @@ int main()
 
         if (wyjscie == 1)
         {
-            cout << "podaj pierwsza liczbe: ";
-            int liczba1;
-            cin >> liczba1;
-            cout << "podaj druga liczbe: ";
-            int liczba2;
-            cin >> liczba2;
-
+            PobranieDwochLiczb(liczba1, liczba2);
 
             int wynik = Dodawanie(liczba1, liczba2);
 
             cout << "wynik dodawania to: " << wynik << endl << endl;
-
 
             Czyszczenie();
         }
 
         if (wyjscie == 2)
         {
-            cout << "podaj liczbe od ktorej odejmujesz: ";
-            int liczba1;
-            cin >> liczba1;
-            cout << "podaj liczbe ktora chcesz odjac: ";
-            int liczba2;
-            cin >> liczba2;
-
+            PobranieDwochLiczb(liczba1, liczba2);
 
             int wynik = Odejmowanie(liczba1, liczba2);
 
             cout << "wynik odejmowania to: " << wynik << endl << endl;
-
 
             Czyszczenie();
         }
 
         if (wyjscie == 3)
         {
-            cout << "podaj pierwsza liczbe: ";
-            int liczba1;
-            cin >> liczba1;
-            cout << "podaj druga liczbe: ";
-            int liczba2;
-            cin >> liczba2;
-
+            PobranieDwochLiczb(liczba1, liczba2);
 
             int wynik = Mnozenie(liczba1, liczba2);
 
             cout << "wynik mnozenia to: " << wynik << endl << endl;
-
 
             Czyszczenie();
         }
 
         if (wyjscie == 4)
         {
-            cout << "podaj liczbe ktora chcesz podzielic: ";
-            int liczba1;
-            cin >> liczba1;
-            cout << "podaj liczbe przez ktora dzielisz: ";
-            int liczba2;
-            cin >> liczba2;
+            PobranieDwochLiczb(liczba1, liczba2);
 
-
-            int wynik = Mnozenie(liczba1, liczba2);
+            int wynik = Dzielenie(liczba1, liczba2);
 
             cout << "wynik dzielenia to: " << wynik << endl << endl;
-
 
             Czyszczenie();
         }
 
     }
+}
+
+void PobranieDwochLiczb(int& liczba1, int& liczba2)
+{
+    cout << "podaj pierwsza liczbe: ";
+    cin >> liczba1;
+    cout << "podaj druga liczbe: ";
+    cin >> liczba2;
 }
 
 int Dodawanie(int liczba1, int liczba2)
