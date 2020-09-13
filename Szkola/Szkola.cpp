@@ -5,14 +5,18 @@ using namespace std;
 int main()
 {
     Przywitanie();
+    Obliczenia();
+}
 
+void Obliczenia()
+{
     while (true)
     {
         int liczba1;
         int liczba2;
         int wyjscie = Menu();
 
-        if (wyjscie == 0) 
+        if (wyjscie == 0)
         {
             break;
         }
@@ -23,7 +27,7 @@ int main()
 
             int wynik = Dodawanie(liczba1, liczba2);
 
-            cout << "wynik dodawania to: " << wynik << endl << endl;
+            WyswietlenieWyniku(wynik);
 
             Czyszczenie();
         }
@@ -34,7 +38,7 @@ int main()
 
             int wynik = Odejmowanie(liczba1, liczba2);
 
-            cout << "wynik odejmowania to: " << wynik << endl << endl;
+            WyswietlenieWyniku(wynik);
 
             Czyszczenie();
         }
@@ -45,7 +49,7 @@ int main()
 
             int wynik = Mnozenie(liczba1, liczba2);
 
-            cout << "wynik mnozenia to: " << wynik << endl << endl;
+            WyswietlenieWyniku(wynik);
 
             Czyszczenie();
         }
@@ -56,12 +60,17 @@ int main()
 
             int wynik = Dzielenie(liczba1, liczba2);
 
-            cout << "wynik dzielenia to: " << wynik << endl << endl;
+            WyswietlenieWyniku(wynik);
 
             Czyszczenie();
         }
 
     }
+}
+
+void WyswietlenieWyniku(int wynik)
+{
+    cout << "wynik operacj to: " << wynik << endl << endl;
 }
 
 void PobranieDwochLiczb(int& liczba1, int& liczba2)
@@ -95,7 +104,6 @@ int Dzielenie(int liczba1, int liczba2)
     int wynik = liczba1 / liczba2;
     return wynik;
 }
-
 
 int Menu()
 {
