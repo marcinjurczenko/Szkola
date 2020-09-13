@@ -4,7 +4,10 @@ using namespace std;
 
 int main()
 {
-    Przywitanie();
+    while (true)
+    {
+        Przywitanie();
+    }
 }
 
 void Przywitanie()
