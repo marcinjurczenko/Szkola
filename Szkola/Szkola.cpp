@@ -8,9 +8,6 @@ int main()
     Obliczenia();
 }
 
-/// <summary>
-/// menu
-/// </summary>
 void Obliczenia()
 {
     while (true)
@@ -56,6 +53,12 @@ void Obliczenia()
             Odliczanie(liczba1);
             Czyszczenie();
             break;
+        case 6:
+            Rysunek();
+            break;
+        case 7:
+            Rysunek();
+            break;
         default:
             break;
         }
@@ -72,6 +75,16 @@ void WyswietlenieWyniku(int wynik)
     cout << "wynik operacj to: " << wynik << endl << endl;
 }
 
+
+void Rysunek()
+{
+    cout << endl;
+    cout << "***    ***\n";
+    cout << "**     ***\n";
+    cout << "          \n";
+    cout << "**      **\n";
+    cout << " ******** \n" << endl;
+}
 /// <summary>
 /// pobranie 1 liczby
 /// </summary>
@@ -160,6 +173,7 @@ int Menu()
     cout << "*Mnozenie - 3\n";
     cout << "*Dzielenie - 4\n";
     cout << "*Odliczanie - 5\n";
+    cout << "*:) - 6\n";
     cout << "*Wyjscie - 0\n";
     
     cin >> wyjscie;
