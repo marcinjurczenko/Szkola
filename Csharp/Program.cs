@@ -37,6 +37,32 @@ namespace Csharp
                 Console.ReadKey();
                 Console.Clear();
             }
+
+            Stan stan = Stan.Otwarte;
+
+
+            switch (stan)
+            {
+                case Stan.Otwarte:
+                    Console.WriteLine("stan jest otwarty");
+                    break;
+                case Stan.Zamkniete:
+                    Console.WriteLine("stan jest zamkniety");
+                    break;
+                case Stan.Nieokreslone:
+                    Console.WriteLine("stan jest nieokreslony");
+                    break;
+                default:
+                    break;
+            }
+
         }
+    }
+
+    enum Stan
+    {
+        Otwarte,
+        Zamkniete,
+        Nieokreslone
     }
 }
