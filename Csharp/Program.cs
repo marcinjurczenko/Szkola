@@ -7,7 +7,7 @@ namespace Csharp
         static void Main(string[] args)
         {
 
-            while (true)
+            do
             {
                 Console.WriteLine("Hello World!");
                 Console.WriteLine("Podaj imie");
@@ -15,7 +15,9 @@ namespace Csharp
                 Console.WriteLine("Witaj " + imie);
                 Console.ReadKey();
                 Console.Clear();
-            }
+            } while (true);
+                
+            
             
 
  
