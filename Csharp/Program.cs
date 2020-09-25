@@ -6,7 +6,28 @@ namespace Csharp
     {
         static void Main(string[] args)
         {
-            for (;;)
+            Pies pies = new Pies("pikus");
+            pies.Przywitanie();
+            pies.WypiszPodanyTekst("rufi");
+            Pies pies1 = new Pies("pikus");
+            Pies pies2 = new Pies("padvs");
+            Pies pies3 = new Pies("pasdkus");
+            Pies pies4 = new Pies("piasvs");
+
+            Console.WriteLine(Pies.ilosc);
+
+
+
+
+            //ZabawyNasze();
+        }
+
+        /// <summary>
+        /// naszew zabawy z podstawowymi rzeczami
+        /// </summary>
+        private static void ZabawyNasze()
+        {
+            for (; ; )
             {
                 Console.WriteLine("Hello World!");
                 Console.WriteLine("Podaj imie");
@@ -14,7 +35,7 @@ namespace Csharp
 
                 if (imie == "exit")
                     break;
-            
+
                 switch (imie)
                 {
                     case "adam":
@@ -22,13 +43,13 @@ namespace Csharp
                         break;
 
                     case "tomek":
-                        Console.WriteLine(2+5*8);
+                        Console.WriteLine(2 + 5 * 8);
                         break;
                     default:
                         Console.WriteLine("Witaj " + imie);
                         break;
                 }
-                
+
                 for (int i = 0; i < 10; i++)
                 {
                     Console.WriteLine(i);
@@ -55,7 +76,6 @@ namespace Csharp
                 default:
                     break;
             }
-
         }
     }
 

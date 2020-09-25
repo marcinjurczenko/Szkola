@@ -17,7 +17,7 @@ namespace Csharp
         public static int ilosc;
         private string imie;
 
-        public void PodajImie(string imie)
+        public void WypiszPodanyTekst(string imie)
         {
             Console.WriteLine(imie);
         }
