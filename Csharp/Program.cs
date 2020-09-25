@@ -6,15 +6,19 @@ namespace Csharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Pies pikus = new Pies("pikus");
-            Pies pikus1 = new Pies("rufi");
-            Pies pikus2 = new Pies("sada");
-            Pies pikus3 = new Pies();
-            pikus.PodajImie("pikus");
-            Pies.WypiszTekst("world");
-            Console.WriteLine(Pies.ilosc);
-            pikus3.Przywitanie();
+
+            while (true)
+            {
+                Console.WriteLine("Hello World!");
+                Console.WriteLine("Podaj imie");
+                string imie = Console.ReadLine();
+                Console.WriteLine("Witaj " + imie);
+                Console.ReadKey();
+                Console.Clear();
+            }
+            
+
+ 
         }
     }
 
