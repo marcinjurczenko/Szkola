@@ -12,15 +12,23 @@ namespace Csharp
                 Console.WriteLine("Podaj imie");
                 string imie = Console.ReadLine();
 
-                if (imie == "adam")
-                {
+                if (imie == "exit")
                     break;
-                }
-                else
+            
+                switch (imie)
                 {
-                    Console.WriteLine("Witaj " + imie);
-                }   
+                    case "adam":
+                        Console.WriteLine(imie + " witaj");
+                        break;
 
+                    case "tomek":
+                        Console.WriteLine(2+5*8);
+                        break;
+                    default:
+                        Console.WriteLine("Witaj " + imie);
+                        break;
+                }
+                
                 for (int i = 0; i < 10; i++)
                 {
                     Console.WriteLine(i);
